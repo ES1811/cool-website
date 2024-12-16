@@ -1,0 +1,81 @@
+body {
+    font-family: sans-serif;
+    position: relative;
+}
+.background {
+    position: relative;
+    z-index: 1;
+}
+body::before {
+    content: "";
+    background-image: url(https://i.pinimg.com/originals/bc/b4/66/bcb4663852b25345810e092b01a977be.png);
+    opacity: 0.25;
+    z-index: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    top: 0;
+    left: 0;
+}
+h1, h6 {
+    text-align: center;
+}
+nav {
+    text-align: center;
+}
+li {
+    display: inline;
+}
+.container{
+    margin: 20px auto;
+    width:400px;
+    height:400px;
+    display:grid;
+    grid-template-columns: 200px 200px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-auto-rows: 1fr;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+    -webkit-text-stroke: 1px black;
+    .box{
+      /*background-color:#333;*/
+      opacity: 0.7;
+      text-align: center;
+      background-size: cover;
+      padding:20px;
+      border-radius:10px;
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:40px;
+      font-family:sans-serif;
+    }
+    .chocolate {
+        background-image: url(https://media.istockphoto.com/id/1276645382/photo/chocolate-assortment-background-top-view-of-different-kinds-of-chocolate.jpg?s=612x612&w=0&k=20&c=VSi2enumIt0aHCKTu4_yzvAFIm7DFGdNXZii0mj9iYs=);
+    }
+    .winegums {
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/d9/Bassetts_winegums.jpg);
+    }
+    .snacks {
+        background-image: url(https://cablevey.com/wp-content/uploads/2020/11/The-Complete-Guide-on-Snack-Foods.jpg);
+    }
+    .hard-candies {
+        background-image: url(https://m.media-amazon.com/images/I/91G+c+ox+hL.jpg);
+
+    }
+    .box:hover{
+        opacity: 1;
+    }
+  
+  }
+  a {
+    text-decoration: none;
+    color:black;
+  }
+  a:hover {
+    color:rgb(186, 120, 171);
+  }
